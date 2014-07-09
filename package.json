@@ -1,0 +1,35 @@
+{
+  "name": "shakyshane.com",
+  "version": "0.0.1",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp build"
+  },
+  "homepage": "https://github.com/shakyshane/shakyshane.com",
+  "author": {
+    "name": "Shane Osbourne"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shakyshane/shakyshane.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shakyshane/shakyshane.com/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/shakyshane/shakyshane.com/blob/master/LICENSE-MIT"
+    }
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-minify-css": "^0.3.6",
+    "gulp": "^3.8.5",
+    "gulp-autoprefixer": "0.0.8",
+    "browser-sync": "^1.2.1",
+    "gulp-sass": "^0.7.2",
+    "gulp-rename": "^1.2.0"
+  }
+}

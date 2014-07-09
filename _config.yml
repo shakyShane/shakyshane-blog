@@ -1,0 +1,16 @@
+# Site settings
+title: "({ shakyshane.com })"
+email: shakyshane@gmail.com
+description: "Building things with Javascript."
+baseurl: ""
+url: "http://shakyshane.com"
+twitter_username: shaneosbourne
+github_username:  shakyshane
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Assets
+cssFile: "/css/main.min.css"
+env: "production"
