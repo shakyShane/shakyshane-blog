@@ -17,7 +17,7 @@ Nothing more annoying that IE7's treatment of inline-block. You've probably seen
 
 {% highlight css %}
 .box {
-	display: inline-block;
+    display: inline-block;
     zoom: 1;
     *display: inline;
 }
@@ -114,17 +114,17 @@ Instead, you should create a class that is descriptive of it's functionality & e
 {% highlight css %}
 /* shared styles */
 .inline-block, .box, .box2 {
-	display: inline-block;
-	zoom: 1;
-	*display: inline;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
 }
 /* .box specific styles */
 .box {
-	background: orange;
+    background: orange;
 }
 /* .box2 specific styles */
 .box2 {
-	background: black;
+    background: black;
 }
 {% endhighlight %}
 
