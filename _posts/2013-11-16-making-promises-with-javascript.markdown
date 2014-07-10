@@ -26,7 +26,6 @@ So, with our simulated ajax-call, how can we use the value of `data` in the rest
 How about making the function `return` the value of data? 
 
 {% highlight javascript %}
-language-javascript
 var getData = function(){
   var data;
   window.setTimeout(function () {
@@ -41,7 +40,6 @@ console.log(getData()); // undefined
 Well that didn't work too well! The thing is, by the time we return, `data` has not yet been set! Let's try something else...
 
 {% highlight javascript %}
-js
 var getData = function(){
   var data;
   window.setTimeout(function () {
