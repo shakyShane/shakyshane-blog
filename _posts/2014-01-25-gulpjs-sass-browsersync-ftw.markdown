@@ -14,7 +14,7 @@ The end result will be a pretty sweet front-end development setup including:
 - A **Server** running on an IP address that can be accessed on multiple devices/screens.
 - **Syncronized** scroll, clicks, links & form fields across all devices.
 
-{<1>}![Modern Developer workflow - Image by Addy Osmani](https://pbs.twimg.com/media/BehaekGCEAAp9bM.jpg:large)
+![Modern Developer workflow - Image by Addy Osmani](https://pbs.twimg.com/media/BehaekGCEAAp9bM.jpg)
 
 This photo from  [@addyosmani](https://twitter.com/addyosmani) shows BrowserSync in use.
 

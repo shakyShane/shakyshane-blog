@@ -48,7 +48,7 @@ gulp.task("browser-sync", ["sass", "build-dev"], function() {
  */
 gulp.task("sass", function () {
     browserSync.notify("Compiling SASS...");
-    gulp.src("_scss/*.scss")
+    gulp.src("_scss/**/*.scss")
         .pipe(sass())
         .pipe(prefix(["last 5 versions", "> 1%", "ie 8"], { cascade: true }))
         .pipe(gulp.dest("_site/css"))
@@ -65,7 +65,10 @@ gulp.task("sass", function () {
  */
 gulp.task("watch", function () {
     gulp.watch("_scss/**/*.scss", ["sass"]);
-    gulp.watch(["_posts/*",], ["build-dev", reload]);
+    gulp.watch([
+        "_posts/*",
+        "_includes/**",
+        "_layouts/**"], ["build-dev", reload]);
 });
 
 /**

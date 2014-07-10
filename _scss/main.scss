@@ -1,2 +1,24 @@
-@import "styles";
-@import "highlight";
+@charset "UTF-8";
+
+/**
+ * Project variables
+ */
+@import "vars";
+
+@import "modules/mixins";
+@import "vendor/normalize";
+@import "modules/reset";
+
+@import "vendor/highlighting";
+
+@import "theme/base";
+
+@import "theme/nav";
+@import "theme/buttons";
+@import "theme/headings";
+@import "theme/links";
+@import "theme/header";
+@import "theme/footer";
+@import "theme/layout";
+@import "theme/code";
+@import "theme/posts";

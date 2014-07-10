@@ -1,0 +1,70 @@
+.site-header {
+
+    background: #fbfbfb;
+    text-align: center;
+    padding: .5em 0;
+    border-bottom: 1px solid #f4f4f4;
+    border-top: 5px solid darken($lime, 5%);
+
+    @include media-query(min, $lap-start) {
+        padding: 1em 0;
+        margin-bottom: $base-spacing;
+    }
+
+}
+
+/**
+ * Main site title
+ */
+.site-title {
+
+    @include font-size(20px);
+    padding: 3px;
+    font-weight: bold;
+    display: block;
+    color: black;
+
+    @include media-query(min, $lap-start) {
+        @include font-size(30px);
+        margin-bottom: $half-spacing;
+    }
+
+    &:hover {
+
+        text-decoration: none;
+        color: $teal;
+    }
+}
+
+.site-nav {
+
+    display: block;
+
+    a {
+
+        text-transform: uppercase;
+        padding: .2em .4em;
+
+        margin-left: 10px;
+        border-radius: 3px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:hover {
+            color: black;
+            text-decoration: none;
+        }
+
+        &.active {
+
+            color: grey;
+            cursor: default;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}

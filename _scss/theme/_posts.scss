@@ -1,0 +1,40 @@
+.post-content {
+    ul, ol {
+        display: block;
+        padding-top: $half-spacing;
+        padding-left: $base-spacing+$half-spacing;
+        margin-bottom: $base-spacing;
+    }
+}
+
+/**
+ * List of posts
+ */
+.posts {
+
+    list-style: none;
+
+    li {
+        border-bottom: 1px solid $grey-lt;
+        padding-top: 1em;
+    }
+}
+
+.post-date {
+    color: grey;
+    @include font-size(12px);
+    display: block;
+}
+
+.post-link {
+    display: block;
+    @include font-size(18px);
+    text-transform: uppercase;
+    padding: .3em 0 1em;
+}
+.post-header {
+    .meta {
+        color: #C7C7C7;
+        text-transform: uppercase;
+    }
+}
