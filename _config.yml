@@ -7,6 +7,8 @@ url: "http://shakyhane.com"
 twitter_username: shaneosbourne
 github_username:  shakyshane
 
+exclude: ["node_modules", "gulpfile.js", "package.json"]
+
 # Build settings
 markdown: kramdown
 permalink: pretty

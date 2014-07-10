@@ -1,5 +1,5 @@
 var gulp        = require("gulp");
-var browserSync = require("browser-sync");
+var browserSync = require("/Users/shakyshane/Sites/os-browser-sync");
 var reload      = browserSync.reload;
 var sass        = require("gulp-ruby-sass");
 var minifyCSS   = require("gulp-minify-css");
@@ -39,7 +39,9 @@ gulp.task("build-dev", ["sass"], function (done) {
  */
 gulp.task("browser-sync", ["sass", "build-dev"], function() {
     browserSync({
-        server: "_site"
+        server: {
+            baseDir: ["_site", "./"]
+        }
     });
 });
 
@@ -78,3 +80,5 @@ gulp.task("watch", function () {
 gulp.task("default", ["browser-sync", "watch"]);
 
 gulp.task("build", ["sass", "docs-build", "jekyll-build"]);
+
+gulp.task("dev", ["sass", "jekyll-build"]);

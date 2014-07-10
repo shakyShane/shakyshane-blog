@@ -9,7 +9,7 @@ The early adoption of my open source project [BrowserSync](http://browsersync.io
 
 As it becomes more popular, more bugs are reported - these are great & have helped to make BrowserSync pretty stable at this point, (with the help of some awesome [contributors](https://github.com/shakyShane/browser-sync/graphs/contributors)), but I've been working soley on bugs for the last couple of months & this has resulted in the delay of a killer feature that I believe will take BrowserSync to the next level - a **Control Panel**.
 
-###You won't find it on the App Store
+##You won't find it on the App Store
 
 BrowserSync will remain a command-line tool. It will stay on NPM as a NodeJS module & will always be free & open-source (although if you do use it often and would like to [support it](https://github.com/shakyShane/browser-sync#support), please do.).
 

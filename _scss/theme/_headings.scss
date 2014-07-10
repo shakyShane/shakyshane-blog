@@ -1,6 +1,5 @@
-/**
- * Site Theme
- */
+@import "../vars";
+
 h1, h2, h3, h4, h5, h6, hgroup,
 p, blockquote, address,
 ul, ol, dl,
@@ -31,7 +30,11 @@ h6, .h6 {
 h1, .h1 {
     margin-bottom: $base-spacing;
     padding-top: $base-spacing;
-    @include font-size($h1-size);
+    @include font-size($h2-size);
+
+    @include media-query(min, $lap-start) {
+        @include font-size($h1-size);
+    }
 }
 h2, .h2 {
     margin-bottom: $base-spacing;
