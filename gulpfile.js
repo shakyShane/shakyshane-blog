@@ -39,9 +39,8 @@ gulp.task("build-dev", ["sass"], function (done) {
  */
 gulp.task("browser-sync", ["sass", "build-dev"], function() {
     browserSync({
-        server: {
-            baseDir: ["_site", "./"]
-        }
+        server: "_site",
+        open: false
     });
 });
 
