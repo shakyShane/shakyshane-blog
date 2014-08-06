@@ -49,7 +49,7 @@ gulp.task("browser-sync", ["sass", "build-dev"], function() {
  */
 gulp.task("sass", function () {
     browserSync.notify("Compiling SASS...");
-    gulp.src("_scss/**/*.scss")
+    gulp.src(["_scss/**/*.scss", "bower_components/pygments/css/*.scss"])
         .pipe(sass())
         .pipe(prefix(["last 5 versions", "> 1%", "ie 8"], { cascade: true }))
         .pipe(gulp.dest("_site/css"))
