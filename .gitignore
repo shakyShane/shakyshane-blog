@@ -3,5 +3,5 @@ node_modules
 .sass-cache
 .idea
 bower_components
-
+.aws*
 _bower_components
