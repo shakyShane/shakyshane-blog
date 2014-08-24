@@ -11,7 +11,6 @@ var rev         = require("gulp-rev");
 var awspublish  = require('gulp-awspublish');
 var yaml        = require('js-yaml');
 
-
 var messages = {
     jekyllBuild: "<span style=\"color: grey\">Running:</span> $ jekyll build"
 };
@@ -20,14 +19,17 @@ var jekylArgs    = ["build", "--config", "_config.yml"];
 var jekylDevArgs = ["build", "--config", "_config.yml,_config-dev.yml"];
 
 function getjekyllArgs(cb, args) {
-    return cp.spawn("jekyll", args, {stdio: "inherit"}).on("close", cb);
+    return cp.spawn("jekyll", args, {stdio: "inherit"}).on("close", function () {
+        console.timeEnd("jekyl");
+        cb();
+    });
 }
 
 /**
  * Build the Jekyll Site
  */
 gulp.task("jekyll-build", function (done) {
-    browserSync.notify(messages.jekyllBuild);
+    console.time("jekyl");
     return getjekyllArgs(done, jekylArgs);
 });
 
@@ -87,7 +89,6 @@ gulp.task("rev:css", ['sass'], function () {
         } catch (e) {
             console.log(e);
         }
-
         cb(null);
     }
 
@@ -132,4 +133,4 @@ gulp.task("default", ["browser-sync", "watch"]);
 
 gulp.task("build", ["sass", "docs-build", "jekyll-build"]);
 
-gulp.task("dev", ["sass", "jekyll-build"]);
+gulp.task("dev", ["sass", "jekyll-build", "browser-sync", "watch"]);
