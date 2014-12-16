@@ -497,7 +497,7 @@ textarea:focus {
 /* Comment */
 .err {
   color: #AA0000;
-  background-color: #ffaaaa; }
+  background-color: #FFAAAA; }
 
 /* Error */
 .k {
@@ -531,7 +531,7 @@ textarea:focus {
 /* Comment.Special */
 .gd {
   background-color: #FFCCCC;
-  border: 1px solid #cc0000; }
+  border: 1px solid #CC0000; }
 
 /* Generic.Deleted */
 .ge {
@@ -539,7 +539,7 @@ textarea:focus {
 
 /* Generic.Emph */
 .gr {
-  color: red; }
+  color: #FF0000; }
 
 /* Generic.Error */
 .gh {
@@ -549,11 +549,11 @@ textarea:focus {
 /* Generic.Heading */
 .gi {
   background-color: #CCFFCC;
-  border: 1px solid #00cc00; }
+  border: 1px solid #00CC00; }
 
 /* Generic.Inserted */
 .go {
-  color: #aaaaaa; }
+  color: #AAAAAA; }
 
 /* Generic.Output */
 .gp {
@@ -571,7 +571,7 @@ textarea:focus {
 
 /* Generic.Subheading */
 .gt {
-  color: #99cc66; }
+  color: #99CC66; }
 
 /* Generic.Traceback */
 .kc {
@@ -604,11 +604,11 @@ textarea:focus {
 
 /* Keyword.Type */
 .m {
-  color: #ff6600; }
+  color: #FF6600; }
 
 /* Literal.Number */
 .s {
-  color: #cc3300; }
+  color: #CC3300; }
 
 /* Literal.String */
 .na {
@@ -629,7 +629,7 @@ textarea:focus {
 
 /* Name.Constant */
 .nd {
-  color: #9999ff; }
+  color: #9999FF; }
 
 /* Name.Decorator */
 .ni {
@@ -643,11 +643,11 @@ textarea:focus {
 
 /* Name.Exception */
 .nf {
-  color: #cc00ff; }
+  color: #CC00FF; }
 
 /* Name.Function */
 .nl {
-  color: #9999ff; }
+  color: #9999FF; }
 
 /* Name.Label */
 .nn {
@@ -674,27 +674,27 @@ textarea:focus {
 
 /* Text.Whitespace */
 .mf {
-  color: #ff6600; }
+  color: #FF6600; }
 
 /* Literal.Number.Float */
 .mh {
-  color: #ff6600; }
+  color: #FF6600; }
 
 /* Literal.Number.Hex */
 .mi {
-  color: #ff6600; }
+  color: #FF6600; }
 
 /* Literal.Number.Integer */
 .mo {
-  color: #ff6600; }
+  color: #FF6600; }
 
 /* Literal.Number.Oct */
 .sb {
-  color: #cc3300; }
+  color: #CC3300; }
 
 /* Literal.String.Backtick */
 .sc {
-  color: #cc3300; }
+  color: #CC3300; }
 
 /* Literal.String.Char */
 .sd {
@@ -703,7 +703,7 @@ textarea:focus {
 
 /* Literal.String.Doc */
 .s2 {
-  color: #cc3300; }
+  color: #CC3300; }
 
 /* Literal.String.Double */
 .se {
@@ -712,27 +712,27 @@ textarea:focus {
 
 /* Literal.String.Escape */
 .sh {
-  color: #cc3300; }
+  color: #CC3300; }
 
 /* Literal.String.Heredoc */
 .si {
-  color: #aa0000; }
+  color: #AA0000; }
 
 /* Literal.String.Interpol */
 .sx {
-  color: #cc3300; }
+  color: #CC3300; }
 
 /* Literal.String.Other */
 .sr {
-  color: #33aaaa; }
+  color: #33AAAA; }
 
 /* Literal.String.Regex */
 .s1 {
-  color: #cc3300; }
+  color: #CC3300; }
 
 /* Literal.String.Single */
 .ss {
-  color: #ffcc33; }
+  color: #FFCC33; }
 
 /* Literal.String.Symbol */
 .bp {
@@ -752,7 +752,7 @@ textarea:focus {
 
 /* Name.Variable.Instance */
 .il {
-  color: #ff6600; }
+  color: #FF6600; }
 
 /* Literal.Number.Integer.Long */
 hr {
@@ -776,7 +776,7 @@ html {
 body {
   max-width: 100%;
   overflow-x: hidden;
-  background: white;
+  background: #fff;
   color: #333333;
   text-rendering: optimizeLegibility; }
 
@@ -834,24 +834,24 @@ table tbody tr:nth-child(odd) {
   border-radius: 3px; }
   .button:hover, .button:focus {
     background: #cccccc;
-    color: black;
+    color: #000;
     text-decoration: none; }
   .button:active {
-    background: black;
-    color: white; }
+    background: #000;
+    color: #fff; }
   .button + .button,
   .button + a {
     margin-left: 12px; }
 
 .button--primary {
   background: #da4453;
-  color: white; }
+  color: #fff; }
   .button--primary:hover, .button--primary:focus {
     background: #de5967;
-    color: white; }
+    color: #fff; }
   .button--primary:active {
     background: #c42737;
-    color: white; }
+    color: #fff; }
 
 /**
  * VARIABLES
@@ -964,7 +964,7 @@ a {
           transition: color 0.2s ease; }
   a:hover, a:active, a:focus {
     text-decoration: underline;
-    color: black; }
+    color: #000; }
   a [class^="icon-"],
   a [class*=" icon-"] {
     text-decoration: none; }
